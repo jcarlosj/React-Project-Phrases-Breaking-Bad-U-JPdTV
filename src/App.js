@@ -15,7 +15,10 @@ const Button = styled .button `
 function App() {
 
   const getApiData = () => {
-    console .log( 'API Data' );
+    const api = fetch( 'https://www.breakingbadapi.com/api/quote/random' ),
+          quote = api .then( response => response .json() );
+    
+    quote .then( response => console .log( 'Data', response ) );
   }
 
   return (
