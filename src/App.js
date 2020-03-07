@@ -14,11 +14,11 @@ const Button = styled .button `
 
 function App() {
 
-  const getApiData = () => {
-    const api = fetch( 'https://www.breakingbadapi.com/api/quote/random' ),
-          quote = api .then( response => response .json() );
+  const getApiData = async () => {
+    const api = await fetch( 'https://www.breakingbadapi.com/api/quote/random' ),
+          quote = await api .json();
     
-    quote .then( response => console .log( 'Data', response ) );
+    console .log( 'Data', quote );
   }
 
   return (
