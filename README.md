@@ -1,3 +1,9 @@
+# Breaking Bad: Frases de personajes de la serie de televisión.
+
+Este proyecto consume la API https://www.breakingbadapi.com/ a través de la cual podemos visualizar las frases de cada uno de los personajes de la serie televisiva (Breaking Bad) de forma aleatoria, a través de la carga de la página o de la pulsación de un botón.
+
+La funcionalidad se ddesarrolla haciendo uso de conceptos como Components, Props, State, Hook (useState) de React. (v.16.12.0). Además de la implementación de librerías para la creación de Style Components en React (emotion)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
