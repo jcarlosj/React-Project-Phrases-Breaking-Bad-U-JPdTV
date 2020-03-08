@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const Quote = () => {
+const Quote = ({ quote }) => {          // Destructure props
     return (
-        <h2>Quote</h2>
+        <Fragment>
+            <p>{ quote .quote }</p>
+            <p>{ quote .author }</p>
+        </Fragment>
     );
 }
 

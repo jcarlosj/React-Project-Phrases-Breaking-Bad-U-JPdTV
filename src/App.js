@@ -33,7 +33,9 @@ function App() {
         <Button 
           onClick={ () => getApiData() }
         >New phrase</Button>
-        <Quote />
+        <Quote 
+          quote={ quote }
+        />
       </header>
     </div>
   );
