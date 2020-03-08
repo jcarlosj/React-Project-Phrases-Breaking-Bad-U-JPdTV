@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './breaking-bad-logo.svg';
 import './App.css';
 import styled from '@emotion/styled';
+import Quote from './components/Quote';
 
 const Button = styled .button `
   background: #085D2E;
@@ -32,6 +33,7 @@ function App() {
         <Button 
           onClick={ () => getApiData() }
         >New phrase</Button>
+        <Quote />
       </header>
     </div>
   );
