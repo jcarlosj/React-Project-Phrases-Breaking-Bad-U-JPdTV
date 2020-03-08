@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './breaking-bad-logo.svg';
 import './App.css';
 import styled from '@emotion/styled';
@@ -11,12 +11,21 @@ const Button = styled .button `
   color: white;
   margin-top: 3rem;
   padding: 1rem 3rem;
+
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 function App() {
 
   /** Define State */
   const [ quote, setQuote ] = useState({});
+
+  /** Seguimiento a cambios en el State */
+  useEffect( () => {
+    getApiData();
+  }, [] );
 
   const getApiData = async () => {
     const api = await fetch( 'https://www.breakingbadapi.com/api/quote/random' ),
